@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+/* já alterei as cores mais ou menos ficaria(troquei laranja e amarelo pelos rosa) */
+:root {
+    --dark: #3C3B40;
+    --light: #F3F3F3;
+    --primary: #D69697;
+    --primaryHover: #B44A60;
+    --second:#0080ff;
+    --secondHover: #0051ff;
+}
+
+body {
+    position: relative;
+    background: var(--dark);
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+    transition: 1s;
+}
+
+/*14 min iniciar a estilização do nav */
