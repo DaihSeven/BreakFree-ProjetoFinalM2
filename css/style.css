@@ -26,3 +26,64 @@ body {
 }
 
 /*14 min iniciar a estilização do nav */
+
+/*header*/
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 100px;
+    z-index: 1000;
+}
+
+.header-left, 
+.header-right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+}
+
+/*Header left*/
+.logo {
+    font-size: 2rem;
+    color: var(--light);
+    letter-spacing: 1px;
+    font-weight: 800;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.nav {
+    display: flex;
+    gap: 40px;
+}
+
+.nav li {
+    list-style: none;
+    margin: 0 10px;
+}
+
+.nav li a {
+    color: var(--light);
+    text-decoration: none;
+    font-weight: 400;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.nav li:hover a{
+    color: var(--primaryHover);
+}
+
+/*Header right*/
+.signin {
+    font-size: 1rem;
+    color: var(--light);
+}
