@@ -5,7 +5,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-/* já alterei as cores mais ou menos ficaria(troquei laranja e amarelo pelos rosa) */
+
 :root {
   --dark: #3c3b40;
   --light: #f3f3f3;
@@ -21,13 +21,13 @@ body {
   font-family: "Roboto", sans-serif;
   width: 100%;
   min-height: 100vh;
-  overflow: hidden;
+  overflow: auto;
   transition: 1s;
 }
 
-/*14 min iniciar a estilização do nav */
-
-/*header*/
+body.light {
+    background: var(--light);
+}
 
 header {
   position: absolute;
@@ -37,7 +37,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 30px 100px;
+  padding: 1.875em 6.25em;
   z-index: 1000;
 }
 
@@ -46,34 +46,37 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 100px;
+  gap: 6.25em;
 }
 
-/*Header left*/
 .logo {
-  font-size: 2rem;
+  font-size: 2em;
   color: var(--light);
-  letter-spacing: 1px;
+  letter-spacing: 0.0625em;
   font-weight: 800;
   text-decoration: none;
   transition: 0.3s;
 }
 
+body.light .logo {
+    color: var(--dark);
+}
+
 .nav {
   display: flex;
-  gap: 40px;
+  gap: 2.5em;
 }
 
 .nav li {
   list-style: none;
-  margin: 0 10px;
+  margin: 0 0.625em;
 }
 
 .nav li a {
   color: var(--light);
   text-decoration: none;
   font-weight: 400;
-  letter-spacing: 1px;
+  letter-spacing: 0.0625em;
   cursor: pointer;
   transition: 0.3s;
 }
@@ -81,20 +84,19 @@ header {
 body.light .nav li a {
   color: var(--dark);
 }
-/*Dev_Gustavo = A cor da palavras homer estão da mesmo cor do fundo*/
+
 .nav li:hover a, body.light .nav li:hover a {
   color: var(--primaryHover);
 }
 
-/*Header right*/
 .signin {
-  font-size: 1rem;
+  font-size: 1em;
   color: var(--light);
   font-weight: 600;
   text-decoration: none;
-  padding: 10px 25px;
+  padding: 0.625em 1.5625em;
   background: var(--primary);
-  border-radius: 30px 50px 0 30px;
+  border-radius: 1.875em 3.125em 0 1.875em;
   transition: 0.3s;
 }
 
@@ -103,13 +105,13 @@ body.light .nav li a {
 }
 
 .icon-light {
-  font-size: 1.6rem;
+  font-size: 1.6em;
   color: var(--light);
 }
 
 .icon-dark {
   color: var(--dark);
-  font-size: 1.6rem;
+  font-size: 1.6em;
   display: none;
 }
 
@@ -125,32 +127,34 @@ body.light .icon-dark {
 .banner {
   position: relative;
   width: 100%;
-  height: 100vh;
-  padding: 0 100px;
+  height: 100%;
+  padding: 0 6.25em;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  overflow: hidden;
+  overflow: auto;
   transition: 0.5s;
 }
 
 .banner .content {
   width: 50%;
 }
+
 .banner .content .title {
-  font-size: 6rem;
+  font-size: 4em;
   color: var(--light);
-  margin-bottom: 20px;
+  margin-bottom: 1.25em;
   transition: 0.3s;
 }
+
 .banner .content p {
   color: var(--light);
   font-weight: 250;
-  letter-spacing: 1px;
-  margin-bottom: 50px;
+  letter-spacing: 0.0625em;
+  margin-bottom: 3.125em;
   transition: 0.3s;
 }
-/* Dev_Gustavo = Mudar a cor das letras Grandes do inicio preto n esta funcinando */
+
 body.light .banner .content .title {
   color: var(--dark);
 }
@@ -162,15 +166,15 @@ body.light .banner .content p {
 .banner .content .button a {
   text-decoration: none;
   color: var(--light);
-  padding: 15px 20px;
-  font-size: 1.3rem;
+  padding: 0.9375em 1.25em;
+  font-size: 1.3em;
   transition: 0.3s;
 }
 
 .btn-left {
   background: var(--primary);
-  border-radius: 50px 30px 30px 0;
-  margin-right: 20px;
+  border-radius: 3.125em 1.875em 1.875em 0;
+  margin-right: 1.25em;
 }
 
 .btn-left:hover {
@@ -179,7 +183,7 @@ body.light .banner .content p {
 
 .btn-right {
   background: var(--second);
-  border-radius: 30px 0 50px 30px;
+  border-radius: 1.875em 0 3.125em 1.875em;
 }
 
 .btn-right:hover {
@@ -191,17 +195,17 @@ body.light .banner .content p {
 .banner .gallery {
   width: 50%;
   height: 100%;
-  padding: 100px;
+  padding: 6.25em;
   display: grid;
-  grid-template-columns: repeat(3,1fr);
-  grid-gap: 30px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1.875em;
 }
 
 .gallery .item {
   position: relative;
-  width: 200px;
+  width: 12.5em;
   overflow: hidden;
-  border-radius: 100px;
+  border-radius: 6.25em;
   transition: ease-in-out 0.3s;
   cursor: pointer;
 }
@@ -210,7 +214,7 @@ body.light .banner .content p {
   box-shadow: 0 0 30px rgba(255, 255, 255, 0.6); 
 }
 
-.body.light .gallery .item:hover {
+body.light .gallery .item:hover {
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
 }
 
@@ -223,14 +227,59 @@ body.light .banner .content p {
 
 .gallery .item:nth-of-type(1) {
   grid-row: 1/4;
+  animation: move 5s linear infinite;
+}
+
+.gallery .item:nth-of-type(2) {
+    animation: moveInverse 5s linear infinite;
+}
+
+.gallery .item:nth-of-type(3) {
+    animation: move 5s linear infinite;
+}
+
+.gallery .item:nth-of-type(4) {
+    animation: move 5s linear infinite;
 }
 
 .gallery .item:nth-of-type(5) {
   grid-row: 2/5;
+  animation: moveInverse 5s linear infinite;
+}
+
+.gallery .item:nth-of-type(6) {
+    animation: move 5s linear infinite;
+}
+
+.gallery .item:nth-of-type(7) {
+    animation: move 5s linear infinite;
 }
 
 .gallery .item:nth-of-type(8) {
   grid-row: 3/6;
+  animation: move 5s linear infinite;
 }
 
-/* a partir do minuto 47.02 */
+.gallery .item:nth-of-type(9) {
+    animation: moveInverse 5s linear infinite;
+}
+
+@keyframes move {
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(6.25em);
+    }
+}
+
+@keyframes moveInverse {
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-6.25em);
+    }
+}
