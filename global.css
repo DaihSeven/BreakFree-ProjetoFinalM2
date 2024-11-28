@@ -30,14 +30,14 @@ body.light {
 }
 
 header {
-  position: absolute;
+  position:absolute;
   top: 0;
   left: 0;
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.875em 6.25em;
+  gap: 1.875em 6.25em;/*padding ou gap? é preciso ver qual fica melhor*/
   z-index: 1000;
 }
 
