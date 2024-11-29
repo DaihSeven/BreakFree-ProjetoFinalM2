@@ -1,3 +1,4 @@
+@import url(../global.css);
 /* Estilos para o link na página dicas, a ser mudado */
 body {
     display: flex; 
@@ -19,10 +20,16 @@ main {
 
 h1, h3 {
     color: var(--primaryHover); /*ajeitar o var()*/
+    text-align: center;
 }
 
 p {
     color: var(--light);
+    text-align:center;
+}
+
+section {
+    padding: 3% 0;
 }
 
 #tips {
@@ -41,12 +48,54 @@ p {
     background-image: 
     linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), /* Camada escura */
     url(https://st5.depositphotos.com/75494502/66310/i/450/depositphotos_663108142-stock-photo-abstract-set-purple-pink-background.jpg);
-  background-size: cover;
-  background-position: center;
-  background-blend-mode: darken;
-  
-  
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: darken;
+    padding: 0.625rem 8rem;
 }
+
+#tips-tree {
+    text-align: center;
+}
+
+#tips-four {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.25rem; 
+    padding: 0;
+  }
+
+#text {
+    text-align: center;
+    border: 2px dashed #0080ff; 
+    border-radius: 10px; 
+    padding: 1rem; 
+    animation: glowing 1.5s infinite; 
+}
+  
+@keyframes glowing {
+    0% {
+      border-color:#0080ff;
+      box-shadow: 0 0 5px #0080ff;
+    }
+    50% {
+      border-color: #d69697;
+      box-shadow: 0 0 20px #d69697;
+    }
+    100% {
+      border-color: #0051ff;
+      box-shadow: 0 0 5px #0051ff;
+    }
+  }
+  
+  
+img {
+    width: auto; 
+    height:auto; 
+    object-fit: cover; 
+    vertical-align: middle;
+  }
+
 
 body.light #tips-two {
     background-image: 
@@ -59,6 +108,15 @@ body.light #tips-two {
     font-size: 24px;         
     text-decoration: none;   
     color: #000;             
+}
+
+#tips-five{
+    text-align: center;
+}
+
+#tips-five img{
+    max-width: 50%;
+    max-height: 50%;
 }
 
 @media (max-width: 768px) {
