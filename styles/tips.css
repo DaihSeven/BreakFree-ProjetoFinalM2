@@ -18,7 +18,7 @@ main {
 }
 
 h1, h3 {
-    color: #b44a60; /*ajeitar o var()*/
+    color: var(--primaryHover); /*ajeitar o var()*/
 }
 
 p {
@@ -44,6 +44,7 @@ p {
   background-size: cover;
   background-position: center;
   background-blend-mode: darken;
+  
   
 }
 
