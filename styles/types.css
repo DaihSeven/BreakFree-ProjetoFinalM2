@@ -1,0 +1,45 @@
+main{
+    padding-top: 5em;
+}
+.titleTypes{
+    color: var(--light);
+    text-align: center;
+    font-size: 2.3em;
+    padding: 1em;
+}
+.subtitleTypes{
+    color: var(--primary);
+    padding: 0.8em 0;
+    font-size: xx-large;
+}
+.boxSection{
+    display: flex;
+    flex-direction: row;
+
+    
+}
+img{
+        max-width: 420px;
+    }
+p{
+    display: flex;
+    background: var(--primaryHover);
+    border-radius: 0.4em;
+    padding: 4px;
+    margin: 0.4em 0;
+    color: var(--light);
+    min-height: 11em;
+    align-items: center; 
+    text-align: center;  
+}
+p:hover{
+    box-shadow: 0 0 10px rgb(254, 254, 254) ;
+    transition: 0.5s ease-in-out; 
+
+}
+.boxParagraph{
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    justify-content: space-between;
+}

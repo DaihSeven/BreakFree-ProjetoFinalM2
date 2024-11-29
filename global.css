@@ -23,6 +23,7 @@ body {
   min-height: 100vh;
   overflow: auto;
   transition: 1s;
+  padding: 0.8em;
 }
 
 body.light {
@@ -38,7 +39,7 @@ header {
   justify-content: space-between;
   align-items: center;
   gap: 1.875em 6.25em;/*padding ou gap? é preciso ver qual fica melhor*/
-  z-index: 1000;
+  z-index: 1;
 }
 
 .header-left,
@@ -47,6 +48,7 @@ header {
   justify-content: space-between;
   align-items: center;
   gap: 6.25em;
+  padding: 0.8em;
 }
 
 .logo {
@@ -194,7 +196,6 @@ body.light .banner .content p {
 
 .banner .gallery {
   width: 50%;
-  height: 100%;
   padding: 6.25em;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -280,6 +281,6 @@ body.light .gallery .item:hover {
         transform: translateY(0);
     }
     50% {
-        transform: translateY(-6.25em);
+        transform: translateY(-2em);
     }
 }
