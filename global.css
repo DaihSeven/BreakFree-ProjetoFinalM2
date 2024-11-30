@@ -19,8 +19,8 @@ body {
   position: relative;
   background: var(--dark);
   font-family: "Roboto", sans-serif;
-  width: 100%;
-  min-height: 100vh;
+  max-width: 100%;
+  min-height: 100%;
   overflow: auto;
   transition: 1s;
   padding: 0.8em;
@@ -203,7 +203,6 @@ body.light .banner .content p {
 }
 
 .gallery .item {
-  position: relative;
   width: 12.5em;
   overflow: hidden;
   border-radius: 6.25em;
