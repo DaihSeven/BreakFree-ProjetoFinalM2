@@ -1,0 +1,50 @@
+
+
+
+h1 {
+    font-size: 1.5rem;
+    text-align: center;
+    color: #FF69B4;
+   
+}
+
+
+section
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+img
+{
+    
+    max-width: 30%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+   
+}
+
+p
+{
+    margin: 9px;
+    color: aliceblue;
+}
+
+.Boxcor
+{
+    display: flex;
+    background-color: aqua;
+    justify-content: center;
+    margin:  17px auto;
+
+
+    
+}
+
+.Boxcor p
+{
+    color: #FF69B4;  
+    text-align: center;
+}
