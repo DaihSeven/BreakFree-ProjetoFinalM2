@@ -4,7 +4,7 @@
 h1 {
     font-size: 1.5rem;
     text-align: center;
-    color: #FF69B4;
+    color: var(--primaryHover);
    
 }
 
@@ -29,13 +29,17 @@ img
 p
 {
     margin: 9px;
-    color: aliceblue;
+    color: var(--light);
 }
-
+/* O BODY.LIGHT É O BOTÃO, QUANDO ACIONADO PUXA ESSE CÓDIGO, PODE SER FEITO PRA OUTRAS PARTES TAMBÉM  */
+body.light p {
+    color: var(--dark);
+}
+/*Colocar em inglês .Boxcolors*/
 .Boxcor
 {
     display: flex;
-    background-color: aqua;
+    background-color: #007BFF;
     justify-content: center;
     margin:  17px auto;
 
@@ -45,6 +49,6 @@ p
 
 .Boxcor p
 {
-    color: #FF69B4;  
+    color: var(--primary);  
     text-align: center;
 }

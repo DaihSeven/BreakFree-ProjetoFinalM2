@@ -37,6 +37,12 @@ p:hover{
     transition: 0.5s ease-in-out; 
 
 }
+
+/* O BODY.LIGHT É O BOTÃO, QUANDO ACIONADO PUXA ESSE CÓDIGO, PODE SER FEITO PRA OUTRAS PARTES TAMBÉM  */
+body.light h1 {
+    color: var(--dark);
+}
+
 .boxParagraph{
     display: flex;
     flex-direction: column;
