@@ -28,7 +28,7 @@ img
 
 p
 {
-    margin: 9px;
+    margin: 0.5625em; /* 9px / 16px = 0.5625em */
     color: var(--light);
 }
 /* O BODY.LIGHT É O BOTÃO, QUANDO ACIONADO PUXA ESSE CÓDIGO, PODE SER FEITO PRA OUTRAS PARTES TAMBÉM  */
@@ -36,18 +36,18 @@ body.light p {
     color: var(--dark);
 }
 /*Colocar em inglês .Boxcolors*/
-.Boxcor
+.Boxcolors
 {
     display: flex;
     background-color: #007BFF;
     justify-content: center;
-    margin:  17px auto;
+    margin:  1.0625em auto; /* 17px / 16px = 1.0625em */
 
 
     
 }
 
-.Boxcor p
+.Boxcolors p
 {
     color: var(--primary);  
     text-align: center;
