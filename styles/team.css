@@ -1,28 +1,81 @@
 /* Estilo do container principal */
+:root {
+    --dark: #3c3b40;
+    --light: #f3f3f3;
+    --primary: #d69697;
+    --primaryHover: #b44a60;
+    --second: #0080ff;
+    --secondHover: #0051ff;
+  }
+
+main {
+    gap: 1.25rem; /*ajeitar os gaps*/
+    padding-top: 10%;
+}
+
+.team-intro {
+    text-align: center; /* Centraliza o conteúdo */
+    padding: 40px 20px; /* Espaçamento interno */
+    background-color: transparent; /* Fundo suave */
+    font-family: "Roboto", sans-serif;
+    max-width: 80%; /* Largura máxima */
+    margin: 0 auto; /* Centraliza a seção */
+    color: var(--light);
+}
+
+body.light p {
+    color: var(--dark);
+}
+
+.team-intro p {
+    font-size: 1.2em; /* Tamanho do texto */
+    line-height: 1.6; /* Altura da linha para legibilidade */
+}
+
+#gradient-text {
+    background: linear-gradient(135deg, #007BFF, #FF69B4); /* Define o gradiente */
+    -webkit-background-clip: text; /* Define o clipe para o texto */
+    -webkit-text-fill-color: transparent; /* Torna o texto transparente para mostrar o gradiente */
+    font-size: 2em; /* Ajuste do tamanho da fonte */
+    font-weight: bold; /* Deixa o texto em negrito */
+    text-align: center; /* Centraliza o texto */
+    margin-bottom: 20px; /* Espaçamento abaixo */
+}
+
 .container {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* 3 colunas */
-    gap: 20px; /* Espaçamento entre os cards */
-    margin: 20px;
-    }
+    gap: 40px; /* Espaçamento entre os cards */
+    margin: 0;
+}
     
     /* Estilo de cada card */
-    .card {
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    overflow: hidden;
-    background: #f9f9f9;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+.card {
+        overflow: hidden;
+        background: transparent;
+        width: 400px; /* Ajuste conforme necessário */
+        height: 500px; /* Ajuste conforme necessário */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
     }
     
     /* Estilo da imagem */
-    .card img {
-    width: 100%;
-    height: auto;
+.card img {
+        width: 70%;
+        height: 60%; /* Mantém a proporção */
+        object-fit: cover;
+        overflow: hidden;
+        border: 4px solid transparent; /* Define a espessura inicial da borda */
+        border-image: linear-gradient(135deg, #FF69B4, #007BFF) 1; /* Aplica o gradiente */
+        border-radius: 8px; /* Bordas arredondadas */
+        box-sizing: border-box; /* Inclui bordas no tamanho total */
     }
     
+    
     /* Estilo do conteúdo */
-    .card .content {
+.card .content {
     padding: 16px;
     }
     
@@ -30,13 +83,16 @@
     .card h3 {
     margin: 0 0 10px;
     font-size: 20px;
+    color: var(--primary);
     }
     
     /* Estilo da descrição */
     .card p {
-    font-size: 14px;
-    color: #555;
+    font-size: 16px;
+    color: var(--light);
     line-height: 1.6;
+    font-weight: 400;
+    text-align: justify;
     }
     
     /* Tornar responsivo */

@@ -88,6 +88,12 @@ body.light .subtitle {
     justify-content: space-between;
     gap: 40px;
     margin-top: 65px;
+    flex-wrap: wrap;
+}
+
+.row > div {
+    flex: 1; /* Permite que cada item se ajuste ao espaço disponível */
+    min-width: 250px; /* Define o tamanho mínimo para evitar que fiquem muito pequenos */
 }
 
 .stories {
@@ -139,4 +145,20 @@ body.light .subtitle {
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s, box-shadow 0.3s;
+}
+
+@media (max-width: 768px) {
+    .main-content .intro-heading{
+        font-size: 40px;
+    }
+
+    .main-content .main-heading {
+        font-size: 40px;
+        padding: 8px;
+    }
+
+    .row {
+        flex-direction: column; /* Empilha os itens verticalmente */
+        gap: 20px; /* Reduz o espaçamento entre os itens */
+    }
 }

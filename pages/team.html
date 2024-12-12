@@ -15,14 +15,47 @@
     <title>Break Free</title>
 </head>
 <body >
-    <header>
+  <header>
+    <div class="header-left">
+      <a href="../index.html" class="logo">Break Free</a>
+      <button class="menu-toggle" aria-label="Abrir menu" onclick="toggleMenu()">☰</button>
+      <ul class="nav">
+        <li><a href="./understand.html">Entenda</a></li>
+        <!--O QUE É PRESSÃO SOCIAL-->
+        <li><a href="./types.html">Tipos</a></li>
+        <!--TIPOS DE PRESSÃO-->
+        <li><a href="./efects.html">Efeitos</a></li>
+        <!--EFEITOS DA PRESSÃO SOCIAL-->
+        <li><a href="./tips.html">Dicas</a></li>
+        <!--COMO LIDAR COM A PRESSÃO SOCIAL-->
+      </ul>
+    </div>
+    <div class="header-right">
+      <a href="./team.html" class="signin">Equipe</a
+      ><!--PÁGINA DOS INTEGRANTES DA EQUIPE-->
+      <a href="#" class="icon-light" onclick="toggleLightDark();"
+        ><i class="bi bi-sun-fill"></i
+      ></a>
+      <a href="#" class="icon-dark" onclick="toggleLightDark();"
+        ><i class="bi bi-moon-fill"></i
+      ></a>
+    </div>
+  </header>
+  <main>
+    <section class="team-intro">
+      <h2 id="gradient-text">Nosso Time</h2>
+      <p>
+          Conheça a equipe talentosa que trabalha nos bastidores para tornar tudo possível. Cada membro do nosso time traz uma combinação única de habilidades, paixão e comprometimento para entregar os melhores resultados.
+      </p>
+  </section>
+  <br>
       <div class="container">
         <!-- Card 1 -->
         <div class="card">
         <img src="../images/dai.jpg" alt="Imagem 1">
         <div class="content">
-        <h3>Daiane Koslowski</h3>
-        <p>Uma desenvolvedora full stack que fala sobre como lidar com a pressão social pode sugerir maneiras de equilibrar expectativas externas com o bem-estar pessoal. Ela usa sua experiência para criar soluções que ajudem as pessoas a manter a autenticidade, estabelecer limites saudáveis e fortalecer a autoestima.</p>
+        <h3>Daiane Barbosa</h3>
+        <p>Uma desenvolvedora full stack que fala sobre como lidar com a pressão social. Sugerindo maneiras de equilibrar expectativas externas com o bem-estar pessoal. Ela usa sua experiência para criar soluções que ajudem as pessoas a manter a autenticidade, estabelecer limites saudáveis e fortalecer a autoestima.</p>
         </div>
         </div>
         
@@ -67,10 +100,11 @@
         <img src="../images/damaris.jpg" alt="Imagem 6">
         <div class="content">
         <h3>Damaris Fernandez<h3>
-        <p>Uma desenvolvedora full stack que fala sobre saúde mental e suas consequências explora como a tecnologia afeta o bem-estar psicológico. Ela aborda temas como estresse, ansiedade e burnout, e propõe soluções digitais para ajudar as pessoas a cuidar da saúde mental e equilibrar o uso da tecnologia.</p>
+        <p>Uma desenvolvedora full stack que fala sobre saúde mental e suas consequências. Explora como a tecnologia afeta o bem-estar psicológico e aborda temas como estresse, ansiedade e burnout, e propõe soluções para ajudar as pessoas a cuidar da saúde mental e equilibrar o uso da tecnologia.</p>
         </div>
         </div>
         </div>
-        
+  </main>
+  <script src="../script.js"></script>
 </body>
 </html>
