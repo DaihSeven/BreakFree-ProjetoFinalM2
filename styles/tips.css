@@ -44,6 +44,15 @@ h1 {
     font-size: 1.5rem;
 }
 
+#title-star {
+    font-size: 1.8rem;
+}
+
+#text-star {
+    font-weight: 500;
+    font-size: larger;
+}
+
 h3 {
     font-size: 1.25rem;
 }
@@ -58,7 +67,7 @@ h1, h3 {
 p {
     color: var(--light);
     text-align:center;
-    font-size: 1rem; /* Define o tamanho do texto do <h3> para 24px */
+    font-size: 1.1rem; /* Define o tamanho do texto do <h3> para 24px */
     font-weight: 400; /* Peso leve válido */
 }
 
