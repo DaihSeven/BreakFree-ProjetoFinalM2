@@ -1,114 +1,54 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Courier New', Courier, monospace;
-}
-body{
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.slide-container{
-    max-width: 1120px;
+/* Estilo do container principal */
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colunas */
+    gap: 20px; /* Espaçamento entre os cards */
+    margin: 20px;
+    }
+    
+    /* Estilo de cada card */
+    .card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #f9f9f9;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    
+    /* Estilo da imagem */
+    .card img {
     width: 100%;
-    background: linear-gradient(135deg, #007BFF, #FF69B4);
-    padding: 15px 0;
-}
-
-.slide-content{
-    margin: 0 40px;
-}
-
-.card{
-    width: 320px;
-    border-radius: 25px;
-    background-color: #fff;
-}
-
-.image-content,
-.card-content{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px 14px;
-}
-
-.image-content{
-    position: relative;
-    row-gap: 5px;
-    padding: 25px 0;
-}
-
-.overlay{
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    background-color: #3c3b40;
-    border-radius: 25px 25px 0 25px;
-}
-
-.overlay::before,
-.overlay::after{
-    content: '';
-    position: absolute;
-    right: 0;
-    bottom: -40px;
-    height: 40px;
-    width: 40px;
-    background-color: #3c3b40;
-}
-
-.overlay::after{
-    border-radius: 0 25px 0 0;
-    background-color: #fff;
-}
-
-.card-image{
-    position: relative;
-    height: 150px;
-    width: 150px;
-    border-radius: 50%;
-    background: #fff;
-    padding: 3px;
-}
-
-.card-image .card-img{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 4px solid #3c3b40;
-}
-
-.name{
-    font-size: 18px;
-    font-weight: 500;
-    color: #000000;
-}
-
-.description{
+    height: auto;
+    }
+    
+    /* Estilo do conteúdo */
+    .card .content {
+    padding: 16px;
+    }
+    
+    /* Estilo do título */
+    .card h3 {
+    margin: 0 0 10px;
+    font-size: 20px;
+    }
+    
+    /* Estilo da descrição */
+    .card p {
     font-size: 14px;
-    color: #3c3b40;
-    text-align: center;
-}
-
-.button{
-    border: none;
-    font-size: 16px;
-    color: #fff;
-    padding: 8px 16px;
-    background-color: #3c3b40;
-    border-radius: 6px;
-    margin: 14px;
-    cursor: pointer;
-    transition: all 0.3s ease ;
-}
-
-.button:hover{
-    background-color: #28272b;
-}
+    color: #555;
+    line-height: 1.6;
+    }
+    
+    /* Tornar responsivo */
+    @media (max-width: 1024px) {
+    .container {
+    grid-template-columns: repeat(2, 1fr); /* 2 colunas em telas médias */
+    }
+    }
+    
+    @media (max-width: 768px) {
+    .container {
+    grid-template-columns: 1fr; /* 1 coluna em telas pequenas */
+    }
+    }
+        
