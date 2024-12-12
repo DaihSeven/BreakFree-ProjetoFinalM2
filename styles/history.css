@@ -90,8 +90,8 @@ body.light .subtitle {
 }
 
 .row > div {
-    flex: 1; /* Permite que cada item se ajuste ao espaço disponível */
-    min-width: 250px; /* Define o tamanho mínimo para evitar que fiquem muito pequenos */
+    flex: 1; 
+    min-width: 250px;
 }
 
 .stories {
@@ -156,7 +156,8 @@ body.light .subtitle {
     }
 
     .row {
-        flex-direction: column; /* Empilha os itens verticalmente */
-        gap: 20px; /* Reduz o espaçamento entre os itens */
+        flex-direction: column; 
+        gap: 20px; 
     }
+}
 }
