@@ -78,3 +78,13 @@ p {
   font-weight: 400;
   padding-top: 5%;
 }
+
+@media (max-width: 768px) {
+  .title2-text {
+    max-width: 100%;
+  }
+
+  .effects {
+    padding: 1rem;
+  }
+}

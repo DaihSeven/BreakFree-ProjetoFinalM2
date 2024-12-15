@@ -78,6 +78,13 @@ body.light p {
 
 @media (max-width: 768px) {
     main {
-        padding-top: 16%;
+        padding-top: 25%;
     }
 }
+
+@media (max-width: 368px) {
+    main {
+        padding-top: 30%;
+    }
+}
+

@@ -136,11 +136,17 @@ body.light #subtitleTypes {
   color: var(--light);
 }
 
+@media (max-width: 768px) {
+  main {
+      padding-top: 25%;
+  }
+}
+
 @media (max-width:600px) {
   #paragraphInitial{
     width: 93%;
     border: none;
-  }
+  } 
 
   #subtitleTypes{
     font-size: 1em;
