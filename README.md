@@ -20,7 +20,7 @@ O projeto foi desenvolvido por 6 integrantes, trabalhando de forma colaborativa 
 - **Colaborador(a)**: Pietro Candido 👨‍💻
 - **Colaborador(a)**: Gustavo Alves 👨‍💻
 - **Colaborador(a)**: Thalita Nicacio 👩‍💻
-- **Colaborador(a)**: Maria Julia Batista 👩‍💻
+- **Colaborador(a)**: Maria Júlia Batista 👩‍💻
 - **Colaborador(a)**: Damaris Fernandez 👩‍💻
 
 ## Funcionalidades ⚙️
