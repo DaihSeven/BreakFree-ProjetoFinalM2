@@ -5,7 +5,7 @@
 }
 :root {
     --dark: #3c3b40;
-    --light: #f3f3f3;
+    --light: #fff;
     --primary: #d69697;
     --primaryHover: #b44a60;
     --second: #0080ff;
@@ -28,8 +28,8 @@ body {
 }
 
 .container {
-    max-width: 125em; 
-    padding: 1em; 
+    max-width: 125rem;
+    padding: 1rem;
 }
 
 .main-content {
@@ -37,12 +37,12 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 5em; 
+    margin-top: 5rem;
     color: var(--light);
 }
 
 .main-content .intro-heading {
-    font-size: 5rem; 
+    font-size: 5rem;
 }
 
 body.light .intro-heading {
@@ -51,7 +51,7 @@ body.light .intro-heading {
 
 .main-content .main-heading {
     font-size: 9.375rem;
-    margin-top: -2.25rem; 
+    margin-top: -2.25rem;
     background: linear-gradient(90deg, var(--primary), var(--second));
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
@@ -59,13 +59,13 @@ body.light .intro-heading {
 }
 
 .section-title h1 {
-    font-size: 3.4375em; 
+    font-size: 3.4375rem;
     text-align: center;
-    margin-top: 1.75em; 
+    margin-top: 1.75rem;
 }
 
 .subtitle {
-    font-size: 1.625em; 
+    font-size: 1.625rem;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -77,30 +77,30 @@ body.light .subtitle {
 .story {
     display: flex;
     flex-direction: column;
-    gap: 1.25em; 
-    margin-top: 2.8125em; 
+    gap: 1.25rem;
+    margin-top: 2.8125rem;
 }
 
 .row {
     display: flex;
     justify-content: space-between;
-    gap: 40px;
-    margin-top: 65px;
+    gap: 2.5rem;
+    margin-top: 4.0625rem;
     flex-wrap: wrap;
 }
 
 .row > div {
-    flex: 1; 
-    min-width: 250px;
+    flex: 1;
+    min-width: 15.625rem;
 }
 
 .stories {
     background-color: var(--dark);
     color: var(--light);
-    padding: 1.875em; 
+    padding: 1.875rem;
     flex: 1;
-    border-radius: 0.3125em; 
-    box-shadow: 0 0.25em 0.5em rgba(0, 0, 0, 0.2); 
+    border-radius: 0.3125rem;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2);
     text-align: justify;
     position: relative;
     transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s;
@@ -109,8 +109,8 @@ body.light .subtitle {
 .stories:hover {
     background-color: var(--primaryHover);
     color: var(--light);
-    transform: translateY(-0.625em) scale(1.05); 
-    box-shadow: 0 0.625em 1.25em rgba(0, 0, 0, 0.4); 
+    transform: translateY(-0.625rem) scale(1.05);
+    box-shadow: 0 0.625rem 1.25rem rgba(0, 0, 0, 0.4);
 }
 
 .stories:hover::before {
@@ -120,17 +120,17 @@ body.light .subtitle {
     left: 0;
     right: 0;
     bottom: 0;
-    border: 0.125em solid var(--primary);
-    border-radius: 0.3125em; 
+    border: 0.125rem solid var(--primary);
+    border-radius: 0.3125rem;
     animation: glow 1.5s infinite alternate;
 }
 
 @keyframes glow {
     0% {
-        box-shadow: 0 0 0.3125em var(--primaryHover); 
+        box-shadow: 0 0 0.3125rem var(--primaryHover);
     }
     100% {
-        box-shadow: 0 0 0.9375em var(--primaryHover); 
+        box-shadow: 0 0 0.9375rem var(--primaryHover);
     }
 }
 
@@ -138,26 +138,25 @@ body.light .subtitle {
     background-color: #f3f3f3f3;
     color: var(--primary);
     text-align: center;
-    padding: 1.25em 1.25em;
-    font-size: 1.5625em; 
-    border-radius: 0.9375em; 
-    box-shadow: 0 0.25em 0.5em rgba(0, 0, 0, 0.2);
+    padding: 1.25rem 1.25rem;
+    font-size: 1.5625rem;
+    border-radius: 0.9375rem;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2);
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
-@media (max-width: 768px) {@media (max-width: 768px) {
-    .main-content .intro-heading{
-        font-size: 40px;
+@media (max-width: 768px) {
+    .main-content .intro-heading {
+        font-size: 2.5rem;
     }
 
     .main-content .main-heading {
-        font-size: 40px;
-        padding: 8px;
+        font-size: 2.5rem;
+        padding: 0.5rem;
     }
 
     .row {
-        flex-direction: column; 
-        gap: 20px; 
+        flex-direction: column;
+        gap: 1.25rem;
     }
-}
 }
