@@ -25,6 +25,7 @@ body {
   transition: 1s;
   padding: 0.8em;
 }
+
 ::-webkit-scrollbar {
   width: 5px;
   background: transparent;
@@ -161,7 +162,7 @@ body.light .icon-dark {
 
 .banner .content .title {
   font-size: 4em;
-  color: var(--light);
+  color: var(--primary);
   margin-bottom: 1.25em;
   transition: 0.3s;
 }
@@ -176,7 +177,7 @@ body.light .icon-dark {
 }
 
 body.light .banner .content .title {
-  color: var(--dark);
+  color: var(--primaryHover);
 }
 
 body.light .banner .content p {
@@ -213,7 +214,10 @@ body.light .banner .content p {
   background: var(--secondHover);
 }
 
-
+#text-star {
+  font-weight: 500;
+  font-size: larger;
+}
 
 .banner .gallery {
   width: 50%;
@@ -360,32 +364,4 @@ body.light .footer {
 
 .footer-content a:hover {
   color: var(--secondHover);
-}
-
-@media (max-width: 900px){
-
-  .banner .content .title{
-    font-size: 3.5em;
-  }
-  .gallery .item img{
-    width: 4rem;
-  }
-  .banner .gallery{
-    padding: 5rem ;
-  }
-
-}
-
-@media (max-width: 700px){
-
-  .banner .content .title{
-    font-size: 3em;
-  }
-  .gallery .item img{
-    width: 3.5rem;
-  }
-  .banner .gallery{
-    padding: 4.5rem ;
-  }
-
 }
