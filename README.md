@@ -12,6 +12,56 @@ O site foi criado com o objetivo de conscientizar os usuários sobre os efeitos 
 - **CSS**: Estilo visual e layout
 - **JavaScript**: Funcionalidades interativas
 
+## Estrutura 📑
+````
+├── .hintrc
+├── README.md
+├── global.css
+├── images
+    ├── Gustavo.jpeg
+    ├── dai.jpg
+    ├── damaris.jpg
+    ├── gustavo.jpg
+    ├── image-types.jpg.jpeg
+    ├── image1.png
+    ├── image2.png
+    ├── image3.png
+    ├── image4.png
+    ├── image5.png
+    ├── image6.png
+    ├── image7.png
+    ├── image8.png
+    ├── image9.png
+    ├── img1.png
+    ├── img2.png
+    ├── img3.png
+    ├── img4.png
+    ├── img5.png
+    ├── imgg6.png
+    ├── maju.jpg
+    ├── pietro.jpg
+    ├── social4.png
+    ├── terapia.png
+    └── thali.jpg
+├── index.html
+├── pages
+    ├── efects.html
+    ├── history.html
+    ├── team.html
+    ├── tips.html
+    ├── types.html
+    └── understand.html
+├── script.js
+└── styles
+    ├── efects.css
+    ├── history.css
+    ├── responsive.css
+    ├── team.css
+    ├── tips.css
+    ├── types.css
+    └── understand.css
+````
+
 ## Equipe 👥
 
 O projeto foi desenvolvido por 6 integrantes, trabalhando de forma colaborativa para criar uma plataforma que seja tanto informativa quanto visualmente atrativa.
